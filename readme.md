@@ -64,6 +64,7 @@ payments.forEach(txn => {
 });
 ```
 ✔ Prevents double-spending
+
 ✔ Survives process crashes
 
 ### Telecommunications
@@ -75,5 +76,6 @@ calls.forEach(call => {
 });
 ```
 ✔ Zero call interference
+
 ✔ Auto-recovery on failures
 
