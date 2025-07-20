@@ -2,12 +2,16 @@ import { Process } from './process.js';
 import { ProcessRegistry } from './registry.js';
 
 export class ErlSystem {
-  constructor() {
+  constructor(nodeName = 'nonode@nohost') {
     this.registry = new ProcessRegistry();
+    this.nodeName = nodeName;
+
   }
 
   spawn(behavior) {
     const process = new Process(behavior);
+    process.pid.node = this.nodeName; 
+
     this.registry.processes.set(process.pid, process);
     return process.pid;
   }

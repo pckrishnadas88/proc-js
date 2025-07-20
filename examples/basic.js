@@ -1,7 +1,7 @@
 // examples/basic.js
 import { ErlSystem } from '../src/system.js';
 
-const system = new ErlSystem();
+const system = new ErlSystem('my_node@localhost');
 
 
 // Helper to add delays between messages
