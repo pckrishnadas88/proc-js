@@ -1,0 +1,23 @@
+{
+  "name": "erlang-js",
+  "version": "0.1.0",
+  "description": "Erlang-inspired concurrency for Node.js",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src test",
+    "example": "node examples/basic.js"
+  },
+  "keywords": [
+    "erlang",
+    "actor",
+    "concurrency",
+    "process"
+  ],
+  "author": "Krishnadas",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^9.31.0"
+  }
+}
